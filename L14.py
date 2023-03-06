@@ -4,11 +4,14 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
-        for i in range(len(strs)):
-            for j in range(len(i)):
-                
-
-
+        letter = str()
+        for i in zip(*strs):
+            if len(set(i)) == 1:
+                letter += i[0]
+            else:
+                return letter
+        return letter    
+       
 a = Solution()
-strs = strs = ["flower","flow","flight"]
+strs = ["flower","flow","flight"]
 print(a.longestCommonPrefix(strs))        
