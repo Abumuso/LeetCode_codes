@@ -9,5 +9,5 @@ class Solution:
 
 
 c = Solution()
-columnTitle = "AAA"
+columnTitle = "BB"
 print(c.titleToNumber(columnTitle))        
